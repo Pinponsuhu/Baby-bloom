@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: rgb(245, 245, 220);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 56px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+
+
+#mobile-nav{
+    display: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* The `#login` selector in the CSS code is styling an element with the ID of "login". */
+/* #login {
+    padding: 12px 28px;
+    background-color: indianred;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+} */
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: indianred;
+    font-size: 18px;
+}
+
+#hero {
+    background-color: white;
+    padding: 28px 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero #text-section h1 {
+    font-size: 48px;
+    line-height: 56px;
+    color: rgb(28, 161, 28);
+    margin-bottom: 18px;
+}
+
+#hero #text-section p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 34px;
+}
+
+#hero #text-section a {
+    padding: 14px 36px;
+    border-radius: 2px;
+    background-color: indianred;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 12px 76px;
+    /* justify-content: center; */
+}
+#login form {
+    display: block;
+    margin-top: 28px;
+    width: 380px;
+}
+
+#login form h1{
+    font-size: 28px;
+    color: indianred;
+    /* margin-bottom: 10px; */
+}
+#login form p{
+    color: grey;
+    margin-bottom: 18px;
+}
+
+#login form a{
+    text-decoration: none;
+    color: indianred;
+}
+#login form input, #login form label{
+    display: block;
+    margin-bottom: 12px;
+}
+#login form input{
+    padding: 14px 10px;
+    border: 2px solid indianred;
+    width: 100%;
+}
+#login form button{
+    padding: 14px 38px;
+    border: 2px solid indianred;
+    color: white;
+    font-weight: bold;
+    background-color: indianred;
+}
+
+#location h4{
+    color: indianred;
+    font-size: 24px;
+}
+
+#location p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#footer-section{
+    padding: 28px 148px;
+}
+
+#socials {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 48px;
+    color: white;
+    padding: 12px 36px;
+    background-color: indianred;
+}
+
+#socials div {
+    display: flex;
+    column-gap: 24px;
+}
+
+#socials div a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+#footer-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    column-gap: 18px;
+    align-items: start;
+}
+#quicklinks{
+    display: flex;
+    column-gap: 18px;
+    justify-content: space-between;
+}
+#footer-section section a{
+    display: block; 
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 16px;
+}
+#footer-section section h4{
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+#footer-section #three form,#footer-section #three input, #footer-section #three button{
+    display: block;
+}
+#footer-section #three input,#footer-section #three button{
+    width: 190px;
+    padding: 12px 4px;
+    background: white;
+    border: none;
+    border: 2px solid indianred;
+}
+#footer-section #three button{
+    background-color: indianred;
+    color: white;
+    margin-top: 12px;
+    padding: 12px 28px;
+    width: auto;
+}
+#footer p{
+    padding: 14px;
+    text-align: center;
+    color: indianred;
+}
+@media (max-width: 768px) {
+    #menu-btn{
+        display: block;
+    }
+
+    #desktop-menu{
+        display: none;
+    }
+
+    #mobile-nav{
+        display: flex;
+    }
+
+    #mobile-nav {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        background: indianred;
+        justify-content: start;
+        align-items: center;
+        color: white;
+    }
+
+    #mobile-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+
+
+    #mobile-list{
+        display: none;
+        width: 100%;
+        padding: 16px;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    #mobile-nav nav {
+        flex-direction: column;
+        row-gap: 12px;
+        column-gap: 14px;
+    }
+    #mobile-nav nav a{
+        color: white;
+    }
+
+    #mobile-nav header h1 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    #hero {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero img{
+        width: 90%;
+        margin: auto;
+    }
+
+    #hero #text-section h1 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 12px;
+    }
+
+    #hero #text-section p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    #hero #text-section a {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 76px;
+    }
+
+    #login form {
+        width: 100%;
+    }
+
+    #login form h1 {
+        font-size: 24px;
+    }
+
+    #login form button {
+        padding: 12px 24px;
+    }
+
+    #footer-section {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    #socials{
+        flex-direction: column;
+    }
+}
